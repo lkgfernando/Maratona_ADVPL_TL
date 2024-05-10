@@ -16,9 +16,12 @@ User Function zExe008()
 	Local aArea := FwGetArea()
 	Local nValorA := 0
 	Local nValorB := 1
+	Local cTipos := "MP;PI;PA;MO"
+
+	cTipos := FormatIn(cTipos, ";")
 
 	If ! nValorA == nValorB
-		FwAlertInfo("Mensagem 01", "Primeiro IF")
+		FwAlertInfo("Mensagem 01" + CRLF + cTipos , "Primeiro IF")
 	EndIf
 
 
